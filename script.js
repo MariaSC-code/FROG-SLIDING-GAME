@@ -169,7 +169,7 @@ class Game {
       const pieceNumber = grid[i][j];
       if (pieceNumber !== 15) {
         const img = new Image();
-        img.src = `images/${pieceNumber}.png`;
+        img.src = `/${pieceNumber}.png`;
         img.alt = `Piece ${pieceNumber}`;
         img.className = "piece"; // Added the "piece" class for styling
         img.addEventListener("click", this.handleClickBox(new Box(j, i)));
